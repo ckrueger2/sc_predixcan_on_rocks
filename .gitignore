@@ -3,3 +3,5 @@ filtered_output/
 models/
 troubleshoot.R
 oids_*.txt
+oids_*.txt
+!oids.txt
