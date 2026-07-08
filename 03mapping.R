@@ -2,6 +2,8 @@ library(dplyr)
 library(data.table)
 library(biomaRt)
 
+#keep in mind UKB-PPP is genome build 37 when comparing to other datasets/mapping
+
 #protein mapping file from UKB-PPP
 mapping_file <- fread("~/sc_pwas_in_ukb/olink_protein_map_3k_v1.tsv") #from UKB-PPP synapse
 mapping_filtered <- mapping_file %>%
