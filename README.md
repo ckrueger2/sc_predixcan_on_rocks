@@ -4,7 +4,7 @@
 #### Must be edited:
 - **rocks_cluster_jobs_USER.sh:** Runs 00pwas_wrapper using scheduler. Change file paths. Use rocks_cluster_jobs as an example, if needed
 - **rocks_combine.sh:** Runs 02format_output.R using scheduler. Change file paths. ex run. qsub ~/sc_pwas_in_ukb/rocks_combine.sh hepatocyte_interzonal
-- **02format_output.R:** Combines all output files, filtering by p=0.05 and bonferroni correction
+- **02format_output.R:** Combines all output files, filtering by p<0.05 and bonferroni correction
 #### Should not need to be edited (until my account is deleted):
 - **00install_predixcan.sh:** Installs miniconda and MetaXcan repo onto the cluster, then builds the imlabtools conda environment
 - **00pwas_wrapper.sh:** Wrapper that runs PWAS with scPrediXcan
