@@ -12,7 +12,7 @@
 - **oids.txt:** List of all UK Biobank OIDs available
 #### Other:
 - **missing_oid_outputs.R:** Can be used to check for files present in logs, but not scPrediXcan output or files present in logs, but not full oid list. Change file paths. If used, change OID file in rocks_cluster_jobs_USER.sh to new file name.
-
+- **03mapping.R:** Maps gene coordinates, classifies cis same/different and trans from Wittich et al. 2024, calculates FDR significance
 #### Running scripts:
 - qsub script.sh (to run a job)
 - qstat (see jobs running)
